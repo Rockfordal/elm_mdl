@@ -11,7 +11,6 @@ initialModel =
   { count = 0
   , str0 = ""
   , mdl = Material.model
-      -- Boilerplate: Always use this initial MDL model store.
   }
 
 
@@ -39,6 +38,5 @@ update action model =
       ( { model | str0 = str }, Cmd.none )
 
 
-    {- Boilerplate: MDL action handler. It should always look like this. -}
     MDL action' ->
       Material.update MDL action' model

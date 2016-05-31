@@ -26,16 +26,6 @@ view model =
     [ Options.span
         [ Badge.add <| toString model.count ]
         [ text "Antal" ]
-    {- We construct the instances of the Button component that we need, one
-    for the increase button, one for the reset button. First, the increase
-    button. The arguments are:
-      - An instance id (the `[0]`). Every component that uses the same model
-        collection (model.mdl in this file) must have a distinct instance id.  -
-      - A Msg constructor (`Mdl`), lifting MDL actions to your Msg type.
-      - An initial model (`(Button.model True)`---a button with a ripple animation.
-    Notice that we do not have to add increase and reset separately to model.mdl,
-    and we did not have to add to our update actions to handle their internal events.
-    -}
     , Button.render MDL [0] model.mdl
         [ Button.fab
         , Button.onClick Increase

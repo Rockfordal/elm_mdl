@@ -1,9 +1,7 @@
 import Html.App as App
 import Platform.Cmd exposing (Cmd)
-import Material
 
 import State exposing (initialModel, update)
-import Types exposing (Model, Msg)
 import View exposing (view)
 
 
