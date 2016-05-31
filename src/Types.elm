@@ -9,10 +9,8 @@ type alias Model =
   , mdl : Material.Model
   }
 
-
 type alias Mdl =
   Material.Model
-
 
 type Msg
   = Increase
