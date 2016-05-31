@@ -19,21 +19,21 @@ view : Model -> Html Msg
 view model =
   div
     [ style [ ("padding", "2rem") ] ]
+
     [ Options.span
         [ Badge.add <| toString model.count ]
         [ text "Antal" ]
+
     , Button.render MDL [0] model.mdl
         [ Button.fab
         , Button.onClick Increase
-        , css "margin" "0 24px"
-        ]
+        , css "margin" "0 24px" ]
         [ Icon.i "add"]
 
     , Button.render MDL [1] model.mdl
         [ Button.fab
         , Button.onClick Decrease
-        , css "margin" "0 24px"
-        ]
+        , css "margin" "0 24px" ]
         [ Icon.i "remove"]
 
     , Button.render MDL [2] model.mdl
@@ -45,7 +45,6 @@ view model =
 
     , Textfield.render MDL [3] model.mdl
       [ Textfield.onInput Upd0 ]
-
     ]
 
   |> Material.Scheme.top
