@@ -12,12 +12,8 @@ import Material.Options as Options exposing (css)
 import Material.Badge as Badge
 import Material.Textfield as Textfield
 
+
 -- VIEW
-
-
-type alias Mdl =
-  Material.Model
-
 
 view : Model -> Html Msg
 view model =
@@ -53,4 +49,3 @@ view model =
     ]
 
   |> Material.Scheme.top
-

@@ -37,6 +37,5 @@ update action model =
     Upd0 str ->
       ( { model | str0 = str }, Cmd.none )
 
-
     MDL action' ->
       Material.update MDL action' model
